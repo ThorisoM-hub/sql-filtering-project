@@ -53,3 +53,21 @@ SELECT *
 FROM log_in_attempts
 WHERE login_date = '2022-05-09'
    OR login_date = '2022-05-08';
+
+
+```
+---
+
+## Part 3: Retrieve Login Attempts Outside of Mexico  
+
+### 📝 Task  
+There has been suspicious activity with login attempts, but the team determined that this activity did **not** originate in Mexico.  
+To investigate, I needed to review all login attempts that occurred **outside of Mexico**.  
+
+The `country` column contains values such as `MEX` or `MEXICO`. To filter all non-Mexico attempts, I used the **NOT** operator along with the **LIKE** keyword.  
+
+### 🖥️ SQL Query  
+```sql
+SELECT *
+FROM log_in_attempts
+WHERE country NOT LIKE 'MEX%';
