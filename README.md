@@ -27,9 +27,14 @@ To investigate, I used SQL to filter and retrieve relevant information from the 
 ### 📝 Task
 Query the `log_in_attempts` table to identify all **failed login attempts** that happened **after 18:00 (6:00 PM)**.  
 
+
+
+![After Hours Failed Logins](images/sql_output_fixed.png)
+  
+
 ### 🖥️ SQL Query
 ```sql
 SELECT *
 FROM log_in_attempts
 WHERE login_time > '18:00'
-  AND (success = 0 OR success = FALSE);
+AND (success = 0 OR success = FALSE);
