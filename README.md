@@ -28,7 +28,6 @@ To investigate, I used SQL to filter and retrieve relevant information from the 
 Query the `log_in_attempts` table to identify all **failed login attempts** that happened **after 18:00 (6:00 PM)**.  
 
 
-
 ![After Hours Failed Logins](images/sql_output_fixed.png)
   
 
@@ -45,7 +44,7 @@ AND (success = 0 OR success = FALSE);
 ### 📝 Task  
 A suspicious event occurred on **2022-05-09**. To investigate, I needed to review all login attempts that occurred on that day **and the day before (2022-05-08)**.  
 
-
+![Login Attempts on May 8 or May 9](sql_output_part2_fixed.png)
 
 
 ### 🖥️ SQL Query  
