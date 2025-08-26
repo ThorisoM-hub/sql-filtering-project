@@ -38,3 +38,19 @@ SELECT *
 FROM log_in_attempts
 WHERE login_time > '18:00'
 AND (success = 0 OR success = FALSE);
+
+```
+### Part 2: Retrieve Login Attempts on Specific Dates  
+
+### 📝 Task  
+A suspicious event occurred on **2022-05-09**. To investigate, I needed to review all login attempts that occurred on that day **and the day before (2022-05-08)**.  
+
+
+
+
+### 🖥️ SQL Query  
+```sql
+SELECT *
+FROM log_in_attempts
+WHERE login_date = '2022-05-09'
+   OR login_date = '2022-05-08';
