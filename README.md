@@ -92,3 +92,10 @@ SELECT *
 FROM employees
 WHERE department = 'Marketing'
   AND office LIKE 'East-%';
+```
+### 🔍 Explanation of the Query  
+
+- `department = 'Marketing'` → filters only employees in the Marketing department.  
+- `office LIKE 'East-%'` → retrieves employees located in the East building, no matter which floor or room number.  
+- `AND` ensures the results only include employees who are in **both** Marketing **and** East offices.  
+- ✅ This query retrieves employees in the Marketing department located in the East building, using the **AND** operator to filter by department and office with the `"East%"` pattern.  
