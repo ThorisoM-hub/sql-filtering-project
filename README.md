@@ -66,6 +66,8 @@ To investigate, I needed to review all login attempts that occurred **outside of
 
 The `country` column contains values such as `MEX` or `MEXICO`. To filter all non-Mexico attempts, I used the **NOT** operator along with the **LIKE** keyword.  
 
+![Login Attempts Outside Mexico](IMG_3877.jpeg)
+
 ### 🖥️ SQL Query  
 ```sql
 SELECT *
