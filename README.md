@@ -93,6 +93,9 @@ FROM employees
 WHERE department = 'Marketing'
   AND office LIKE 'East-%';
 ```
+
+![Marketing Employees in East Building](IMG_3890.jpeg)
+
 ### 🔍 Explanation of the Query  
 
 - `department = 'Marketing'` → filters only employees in the Marketing department.  
