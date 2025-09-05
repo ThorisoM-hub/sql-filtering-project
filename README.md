@@ -1,4 +1,4 @@
-# Project 5: Apply Filters to SQL Queries  
+# Project: Apply Filters to SQL Queries  
 
 **Linux & SQL – February 2025**  
 
@@ -73,3 +73,22 @@ The `country` column contains values such as `MEX` or `MEXICO`. To filter all no
 SELECT *
 FROM log_in_attempts
 WHERE country NOT LIKE 'MEX%';
+
+```
+---
+
+## Part 4: Retrieve Employees in Marketing  
+
+### 📝 Task  
+The security team wants to perform updates on specific employee machines in the **Marketing department**.  
+My responsibility was to query the `employees` table to identify all Marketing employees who work in the **East building**.  
+
+The `department` column contains values that include "Marketing", and the `office` column contains office locations like `East-170` or `East-320`.  
+To capture all Marketing employees in East offices, I used the **LIKE** operator with `%`.  
+
+### 🖥️ SQL Query  
+```sql
+SELECT *
+FROM employees
+WHERE department = 'Marketing'
+  AND office LIKE 'East-%';
