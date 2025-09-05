@@ -126,3 +126,25 @@ WHERE department = 'Finance'
 - department = 'Sales' → retrieves employees in the Sales department.  
 - The OR operator ensures that the results include employees from either department.  
 - ✅ This query pulls all employees working in Finance or Sales, making it easier to target these groups for security updates.  
+
+---
+
+## Part 6: Retrieve All Employees Not in IT  
+
+### 📝 Task  
+The team needs to perform a security update on machines for all employees **except those in the IT department**.  
+To achieve this, I queried the `employees` table to exclude IT employees while including everyone else.  
+
+### 🖥️ SQL Query  
+```sql
+SELECT *
+FROM employees
+WHERE department NOT LIKE 'IT';
+```
+### 🔍 Explanation of the Query
+
+- `department NOT LIKE 'IT'` → excludes employees in the IT department.  
+- This ensures all other departments are included in the results.  
+- ✅ This query isolates employees outside of IT so the team can focus security updates on the correct groups.  
+- The query retrieves all employees who are not in the Information Technology department. To do this, I started by selecting all records from the `employees` table. Then, I used a `WHERE` clause with the **NOT** operator to filter out those in the Information Technology department.  
+- For instance, if the query is based on an exact match, it will exclude only employees in the department named exactly `'Information Technology'`. However, if a more flexible approach is used (like filtering with a pattern), it would exclude not only `'Information Technology'` but also any departments that start with those words, such as `'Information Technology Support'` or `'Information Technology Services'`. This ensures all variations of the department name are excluded from the results.  
