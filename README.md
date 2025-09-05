@@ -122,7 +122,7 @@ WHERE department = 'Finance'
 ```
 ### 🔍 Explanation of the Query
 
-	•	department = 'Finance' → retrieves employees in the Finance department.
-	•	department = 'Sales' → retrieves employees in the Sales department.
-	•	The OR operator ensures that the results include employees from either department.
-	•	✅ This query pulls all employees working in Finance or Sales, making it easier to target these groups for security updates.
+- department = 'Finance' → retrieves employees in the Finance department.  
+- department = 'Sales' → retrieves employees in the Sales department.  
+- The OR operator ensures that the results include employees from either department.  
+- ✅ This query pulls all employees working in Finance or Sales, making it easier to target these groups for security updates.  
